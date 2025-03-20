@@ -50,7 +50,7 @@ const Hero = () => {
               className="hero__card"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="hero__overlay"></div>
+              {/* <div className="hero__overlay"></div> */}
               <h1 className="hero__title">{slide.title}</h1>
               <div className="hero__btns">
                 <button className="hero__btn">More</button>
