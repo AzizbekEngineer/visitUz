@@ -54,7 +54,7 @@ const Card = ({ count }) => {
     </div>
   ));
   return (
-    <div className="tours ">
+    <div className="tours container">
       <div className="tours__cards">{toursData}</div>
     </div>
   );

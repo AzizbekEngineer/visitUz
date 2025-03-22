@@ -30,7 +30,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="header__item">
-              <NavLink to={"destination"} className={"header__item__link"}>
+              <NavLink to={"destination/all"} className={"header__item__link"}>
                 Destinations'''
               </NavLink>
             </li>
