@@ -41,7 +41,6 @@
     gap: 15px;
 
     button {
-      // border: 2px solid #097AFF;
       font-weight: 600;
       font-size: 20px;
       line-height: 100%;
@@ -51,6 +50,7 @@
   }
 
   &__btn-contact {
+    border: 2px solid #097AFF;
     padding: 11px 28px;
     background: white;
     color: #097aff;
@@ -60,5 +60,6 @@
     padding: 11px 45px;
     color: white;
     background: #097aff;
+    border: 2px solid #097AFF;
   }
 }
