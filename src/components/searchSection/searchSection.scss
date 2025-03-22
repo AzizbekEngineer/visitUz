@@ -1,0 +1,91 @@
+.searchSection {
+    padding: 73px 0 0;
+
+    &__title {
+        font-family: "Leky Calgria";
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 198%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__cards {
+        padding: 50px 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__card {
+        padding: 22px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        background: #007AFF;
+        border-radius: 20px;
+
+        span {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: #FFFFFF;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 11px 30px;
+        background: #007AFF;
+        color: #FFFFFF;
+        border-radius: 95px;
+
+        svg {
+            color: #FFFFFF;
+            font-size: 35px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        button {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            padding: 8px 24px;
+            background: #FFFFFF;
+            color: #007AFF;
+            border: none;
+            border-radius: 95px;
+        }
+
+        input {
+            flex: 1;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            background: transparent;
+            outline: none;
+            border: none;
+            color: #FFFFFF;
+
+            &::placeholder {
+                color: #FFFFFF;
+                opacity: 1;
+            }
+        }
+
+    }
+
+}
