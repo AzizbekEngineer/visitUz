@@ -1,11 +1,12 @@
 import React from "react";
 import SearchSection from "../../components/searchSection/SearchSection";
+import { Outlet } from "react-router-dom";
 
-const Destinations = ({ children }) => {
+const Destinations = () => {
   return (
     <div>
       <SearchSection />
-      {children}
+      <Outlet />
       <h3>salom</h3>
     </div>
   );

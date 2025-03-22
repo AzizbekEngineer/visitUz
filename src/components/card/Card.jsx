@@ -7,8 +7,8 @@ import { FaArrowRight } from "react-icons/fa6";
 
 import "./card.scss";
 
-const Card = () => {
-  const toursData = TOURS?.map((el) => (
+const Card = ({ count }) => {
+  const toursData = TOURS?.slice(0, count).map((el) => (
     <div key={el.id} className="tours__card">
       <div className="tours__card__left">
         <img src={el.img} alt="" />
