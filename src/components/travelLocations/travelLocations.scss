@@ -1,0 +1,170 @@
+.travelLocations {
+    padding: 140px 0 0;
+
+    &__subtitle {
+        text-align: center;
+        width: 503;
+        height: 59;
+        top: 1405px;
+        left: 709px;
+        color: #097AFF;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding: 26px 0 36px;
+    }
+
+    &__desc {
+        max-width: 952px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 218.00000000000003%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #00224A87;
+    }
+
+    &__btn {
+        margin-left: calc(100% - 196px);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        border-radius: 36px;
+        background: #000000;
+        border: none;
+
+        span {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: #FFFFFF;
+        }
+    }
+
+    &__cards {
+        padding: 30px 0 0;
+        display: flex;
+        height: 890px;
+        gap: 26px;
+    }
+
+    &__card {
+        flex: 1;
+        transition: flex 0.5s ease-in-out, transform 0.3s ease-in-out;
+        border-radius: 29px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__card:hover {
+        flex: 2;
+
+        .travelLocations__card-btn,
+        .travelLocations__info-btn {
+            background: #097AFF;
+            color: #FFFFFF;
+
+            svg {
+                transform: rotate(45deg);
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+
+
+    &__card:hover {
+
+        .travelLocations__info-btn::after {
+            content: "Let’s Journey";
+        }
+    }
+
+    &__card-btn {
+        position: absolute;
+        top: 31px;
+        right: 31px;
+        width: 59px;
+        height: 59px;
+        border: none;
+        background: #FFFFFF;
+        border-radius: 50%;
+        transition: .6s;
+
+        svg {
+            color: #000000;
+            font-size: 20px;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 27px;
+        right: 27px;
+        left: 28px;
+
+        &-btn {
+            border-radius: 36px;
+            width: 100%;
+            background: #FFFFFF;
+            color: #000000;
+            padding: 6px 50px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 198%;
+            letter-spacing: 0%;
+            text-align: center;
+            border: none;
+        }
+    }
+
+    &__info-btn {
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        // padding: 6px 50px;
+        height: 50px;
+
+        &::after {
+            content: "More"; // Default text
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+    }
+
+    &__card-title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+
+    &__card-desc {
+        margin: 5px 0 30px 0;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 218.00000000000003%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+}
