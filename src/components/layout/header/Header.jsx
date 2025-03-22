@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
+import Module from "../../module/Module";
+import Login from "../../../pages/login/Login";
 
 const Header = () => {
+  const [hide, setHide] = useState(false);
   return (
     <header className="header">
       <div className="container header__container">
@@ -34,7 +37,18 @@ const Header = () => {
           </ul>
           <div className="header__btns">
             <button className="header__btn-contact">Contact us</button>
-            <button className="header__btn-login">Login</button>
+            <button onClick={() => setHide(true)} className="header__btn-login">
+              Login
+            </button>
+            {hide ? (
+              <>
+                <Module close={setHide} bg={"fff6"} width={500}>
+                  <Login />
+                </Module>
+              </>
+            ) : (
+              <></>
+            )}
           </div>
         </nav>
       </div>
