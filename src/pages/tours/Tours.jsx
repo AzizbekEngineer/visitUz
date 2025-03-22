@@ -3,6 +3,7 @@ import "./tours.scss";
 import SearchSection from "../../components/searchSection/SearchSection";
 import TravelLocations from "../../components/travelLocations/TravelLocations";
 import Card from "../../components/card/Card";
+import { travelDataFood } from "../../static";
 
 const Tours = () => {
   return (
