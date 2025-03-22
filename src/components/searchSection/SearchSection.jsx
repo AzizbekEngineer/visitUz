@@ -7,6 +7,7 @@ import map from "../../assets/icons/map.svg";
 import camera from "../../assets/icons/camera.svg";
 import search from "../../assets/icons/search.png";
 import { FaSearch } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const SearchSection = () => {
   const dataSearch = [
@@ -42,10 +43,10 @@ const SearchSection = () => {
         <h2 className="searchSection__title">QAYERGA BORASIZ</h2>
         <div className="searchSection__cards">
           {dataSearch?.map((item) => (
-            <div className="searchSection__card">
+            <NavLink className="searchSection__card">
               <img src={item.icon} alt="" />
               <span>{item.title}</span>
-            </div>
+            </NavLink>
           ))}
         </div>
         <div className="searchSection__box">

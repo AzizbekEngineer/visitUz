@@ -13,9 +13,8 @@
 
     &__cards {
         padding: 50px 0 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         gap: 20px;
     }
 
@@ -27,6 +26,7 @@
         gap: 17px;
         background: #007AFF;
         border-radius: 20px;
+        cursor: pointer;
 
         span {
             font-weight: 700;
@@ -35,6 +35,14 @@
             letter-spacing: 0%;
             color: #FFFFFF;
         }
+
+        // &.active {
+        //     background: #1E1E1E;
+        // }
+    }
+
+    &__card:hover {
+        background: #00224A;
     }
 
     &__box {
