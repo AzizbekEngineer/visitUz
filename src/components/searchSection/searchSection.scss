@@ -11,14 +11,14 @@
         color: #000000;
     }
 
-    &__cards {
+    &__items {
         padding: 50px 0 40px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
     }
 
-    &__card {
+    &__item {
         padding: 22px 32px;
         display: flex;
         align-items: center;
@@ -36,9 +36,9 @@
             color: #FFFFFF;
         }
 
-        // &.active {
-        //     background: #1E1E1E;
-        // }
+        &.active {
+            background: #1E1E1E;
+        }
     }
 
     &__card:hover {

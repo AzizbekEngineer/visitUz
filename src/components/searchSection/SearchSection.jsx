@@ -7,9 +7,12 @@ import map from "../../assets/icons/map.svg";
 import camera from "../../assets/icons/camera.svg";
 import search from "../../assets/icons/search.png";
 import { FaSearch } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 
 const SearchSection = () => {
+  const location = useLocation();
+  const path = location.pathname.split("/")[1];
+
   const dataSearch = [
     {
       id: 1,
@@ -41,13 +44,27 @@ const SearchSection = () => {
     <div className="searchSection">
       <div className="container">
         <h2 className="searchSection__title">QAYERGA BORASIZ</h2>
-        <div className="searchSection__cards">
-          {dataSearch?.map((item) => (
-            <NavLink className="searchSection__card">
-              <img src={item.icon} alt="" />
-              <span>{item.title}</span>
-            </NavLink>
-          ))}
+        <div className="searchSection__items">
+          <NavLink to={`/${path}/all`} className="searchSection__item">
+            <img src={all} alt="" />
+            <span>Hammasi</span>
+          </NavLink>
+          <NavLink to={`/${path}/otel`} className="searchSection__item">
+            <img src={home} alt="" />
+            <span>Otel</span>
+          </NavLink>
+          <NavLink to={`/${path}/food`} className="searchSection__item">
+            <img src={food} alt="" />
+            <span>Ovqat</span>
+          </NavLink>
+          <NavLink to={`/${path}/map`} className="searchSection__item">
+            <img src={map} alt="" />
+            <span>Xarita</span>
+          </NavLink>
+          <NavLink to={`/${path}/relax`} className="searchSection__item">
+            <img src={camera} alt="" />
+            <span>Hordiq</span>
+          </NavLink>
         </div>
         <div className="searchSection__box">
           <FaSearch />
