@@ -31,7 +31,7 @@ const Header = () => {
             </li>
             <li className="header__item">
               <NavLink to={"destination"} className={"header__item__link"}>
-                Destinations'''
+                Destinations
               </NavLink>
             </li>
           </ul>
